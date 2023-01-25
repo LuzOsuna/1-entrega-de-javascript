@@ -1,108 +1,124 @@
-// let nombreIngresado = prompt("Ingrese su nombre")
-// console.log ("nombreIngresado")
+//VENTA DE PASAJES
 
-// alert("Bienvenido")
 
-//Ejemplo scrip completo
+function obtenerDatosDelPasajero(){
 
-// let entrada = prompt("Ingresar nombre de usuario");
-// let salida = "Bienvenido/a" + " " + entrada;
-// alert (salida);
+    const DestinoDelViaje = prompt("Ingrese su destino");
+    console.log("Su destino es:" + " " + DestinoDelViaje);
+    
+    const NombreCompletoPasajero = prompt("Ingrese nombre completo del pasajero");
+    console.log("Pasajero:" + " " + NombreCompletoPasajero);
+    
+    const FechaDelViaje = prompt("Ingrese la fecha del viaje");
+    console.log("Fecha del viaje:" + " " + FechaDelViaje);
+    alert("Pasajero:" + " " + NombreCompletoPasajero + " " + " " +"con destino a" +" " + DestinoDelViaje +" " +"el dia"+ " "+FechaDelViaje );
+     }
+     obtenerDatosDelPasajero();
+     console.log("Finalizo la funcion");
+    
 
-// let nombreIngresado = prompt("Ingresar nombre");
-// let apellidoIngresado = prompt("Ingresar apellido");
-// let edadIngresada = prompt("Ingresar edad");
+// const destino = prompt("Seleccione un");
 
-// if ((nombreIngresado !="") && (apellidoIngresado !="") && (edadIngresada <= 18)){
-//     alert("Nombre: " +" " +nombreIngresado+"Apellido:" + " " +apellidoIngresado) ;
+// if ((destino == "Mar del Plata") || (destino == "mar del plata") || (destino == "Mar del plata")) {
+//     console.log("Se seleccione Mar del Plata como destino");
+//     alert("Se selecciono Mar del Plata como destino");
 
-// }else{
-//     alert("Error: Ingresar nombre y Apellido")
+// } else if ((destino == "San Carlos de Bariloche") || (destino == "san carlos de bariloche") || (destino == "Bariloche")) {
+//     console.log("Se selecciono San Carlos de Bariloche como destino");
+//     alert("Se selecciono San Carlos de Bariloche como destino");
+
+// } else if ((destino == "Villa Carlos Paz") || (destino == "villa carlos paz") || (destino == "Villa carlos paz")) {
+//     console.log("Se selecciono Villa Carlos Paz como destino");
+//     alert("Se selecciono Villa Carlos Paz como destino");
+
+// } else {
+
+//     console.log("No hay resultados para su destino")
+//     alert("No hay resultados para su destino ")
 // }
 
-// COMPLEJO DE HOTELES
 
+let entrada = prompt("Ingresar un horario  | Ingresar ESC para salir");
 
-const destino = prompt("INGRESE EL DESTINO DE SU VIAJE");
-
-if ((destino == "Mar del Plata") || (destino == "mar del plata")||(destino == "Mar del plata")){
-    console.log("Se seleccione Mar del Plata como destino");
-    alert("Se selecciono Mar del Plata como destino");
-
-} else if ((destino == "San Carlos de Bariloche") ||(destino == "san carlos de bariloche")||(destino =="Bariloche")){
-    console.log("Se selecciono San Carlos de Bariloche como destino");
-    alert("Se selecciono San Carlos de Bariloche como destino");
-
-} else if ((destino == "Villa Carlos Paz") ||(destino == "villa carlos paz")||(destino =="Villa carlos paz")){
-    console.log("Se selecciono Villa Carlos Paz como destino");
-    alert("Se selecciono Villa Carlos Paz como destino");
-
-} else {
-
-    console.log("No hay resultados para su destino")
-    alert("No hay resultados para su destino ")
-}
-
-
-
-// let huesped = " ";
-// while(huesped !=="salir"){
-
-//     let hospedaje = prompt("Vuelva a ingresar el destino");
-//     while (hospedaje !== "Mar del plata" || hospedaje !== "San Carlos de Bariloche" || hospedaje !== "Villa Carlos Paz" || hospedaje !== "San Rafael") {
-//         console.log (" ")
-
-//         hospedaje = prompt("ingrese CORRECTAMENTE el destino")
-
-//     }
-// }
-// //Le pido al usuario las dias de hospedaje 
-//  const diasdeHospedaje = pasrseInt(prompt("Ingrese la cantidad de dias que se va a hospedar"));
-
-//  //Calcular costo de hospedaje
-//  let costo=0;
-//  switch(hospedaje){
-//     case "Mar del Plata":
-//         costo = diasdeHospedaje * 15000;
-//         break;
-
-//     case "San Carlos de Bariloche":
-//         costo = diasdeHospedaje * 30000; 
-//         break;
-        
-//     case "Villa Carlos Paz": 
-//          costo = diasdeHospedaje * 20000;
-//          break;
-         
-//     case "San Rafael":
-//         costo = diasdehospedaje * 25000;
-//         break;         
-//  }
-
-//  console.log ("El huesped del hospedaje" + hospedaje + " por " + diasdeHospedaje + " Le cuesta: $" + costo);
-
-
-// SWITCH
-let entrada = prompt("Ingresar fecha(DD/MM/AAAA) | Ingresar ESC para salir");
-
-while(entrada!= "ESC"){
-    switch(entrada){
-        case "22/01/2023":
-            console.log("La fecha seleccionada se encuentra disponible")
-            alert("La fecha seleccionada se encuentra esta disponible");
+while (entrada != "ESC") {
+    switch (entrada) {
+        case "08:00 a.m":
+            console.log("El horario seleccionad se encuentra disponible")
+            alert("El horario seleccionado se encuentra esta disponible");
             break;
-        case "05/02/2023":
-            console.log("La fecha seleccionada se encuentra disponible")
-            alert("La fecha seleccionada se encuentra disponible");
+        case "12:00 p.m":
+            console.log("El horario seleccionad se encuentra disponible")
+            alert("El horario seleccionad se encuentra disponible");
             break;
-        case "15/02/2023":
-            console.log("La fecha seleccionada se encunetra disponible")
-            alert("La fecha seleccionada se encuentra disponible");
+        case "17:00 p.m":
+            console.log("El horario seleccionad se encuentra disponible")
+            alert("El horario seleccionad se encuentra disponible");
             break;
         default:
-            alert("Fecha no disponible")
+            alert("Horario no disponible")
             break;
 
     }
-    entrada = prompt("Ingresar fecha (DD/MM/AAAA)")
+    entrada = prompt("Ingresar un horario")
 }
+ //ARRRAYS & OBJETOS
+ class Pasajero {
+    constructor(nombre,destino,fecha,horario){
+        this.nombre =nombre.toUpperCase();
+        this.destino = destino.toUpperCase();
+        this.fecha = parseFloat(fecha);
+        this.horario = parseFloat(horario);
+    }
+ }
+
+
+
+// funcion
+
+//  function obtenerNumeroDeTelefono(){
+// const NumeroDeTelefono = prompt("Ingrese número de télefono");
+// console.log("Su numero de telefono es:" + NumeroDeTelefono);
+// alert("Su número de teléfono es:" + " " + NumeroDeTelefono);
+
+//  }
+//  obtenerNumeroDeTelefono();
+//  console.log("Finalizo la funcion");
+
+ //OBJETO
+
+//  function Pasajero(nombre,edad,fechaDelViaje,destino){
+//     this.nombre = nombre;
+//     this.edad = edad;
+//     this.fechaDelViaje = fechaDelViaje;
+//     this.destino = destino;
+//  }
+
+
+//  const pasajero1 = new Pasajero("Melina",23,"05/02/2023","San Carlos de Barilocho");
+//  const pasajero2 = new Pasajero("Cecilia",22,"05/02/2023","San Carlos de Bariloche");
+//  const pasajero3 = new Pasajero("Martina",25,"05/02/2023","San Carlos de Bariloche");
+//  const pasajero4 = new Pasajero("Erica",42,"15/02/2023","Mar del Plata");
+
+
+//  console.log (pasajero2);
+//  console.log(pasajero1);
+//  console.log (pasajero3);
+ 
+ //ARRAYS
+ 
+//  const lugarDeDestino = ["Mar del Plata","San Carlos de Bariloche","Villa Carlos Paz"]
+
+//  console.log(lugarDeDestino)
+
+
+//  const listaPasajeros = [];
+//  let cantidad = [5];
+ 
+//  do{
+//     let entrada = prompt("INGRESAR NOMBRE DEL PASAJERO");
+//     listaPasajeros.push(entrada.toUpperCase());
+//     console.log(listaPasajeros.length);
+//  } while(listaPasajeros.length != cantidad)
+//  const nuevaLista = listaPasajeros.concat([]);
+
+// alert(nuevaLista.join("\n"));
